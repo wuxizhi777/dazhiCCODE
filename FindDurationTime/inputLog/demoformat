@@ -1,0 +1,176 @@
+2016-11-20 00:00:08,051 INFO  [http-bio-7070-exec-65] controller.QueryController:231 : Using project: GRO
+2016-11-20 00:00:08,051 INFO  [http-bio-7070-exec-65] controller.QueryController:232 : The original query:  SELECT IH_SUBSIDY_DAILY_FACT.CAL_DT, sum(IH_SUBSIDY_DAILY_FACT. SUBSIDY) FROM IH_SUBSIDY_DAILY_FACT as IH_SUBSIDY_DAILY_FACT INNER JOIN DW_CAL_DT_IH as DW_CAL_DT_IH ON IH_SUBSIDY_DAILY_FACT.CAL_DT = DW_CAL_DT_IH.CAL_DT INNER JOIN CATG_MAPPING_PROC4 as CATG_MAPPING_PROC4 ON IH_SUBSIDY_DAILY_FACT.SITE_ID = CATG_MAPPING_PROC4.SITE_ID AND IH_SUBSIDY_DAILY_FACT.LEAF_CATEG_ID = CATG_MAPPING_PROC4.LEAF_CATEG_ID group by IH_SUBSIDY_DAILY_FACT.CAL_DT
+2016-11-20 00:00:08,052 INFO  [http-bio-7070-exec-65] controller.QueryController:358 : The sqlResponse is found in SUCCESS_QUERY_CACHE
+2016-11-20 00:00:08,055 INFO  [http-bio-7070-exec-65] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: SELECT IH_SUBSIDY_DAILY_FACT.CAL_DT, sum(IH_SUBSIDY_DAILY_FACT. SUBSIDY) FROM IH_SUBSIDY_DAILY_FACT as IH_SUBSIDY_DAILY_FACT INNER JOIN DW_CAL_DT_IH as DW_CAL_DT_IH ON IH_SUBSIDY_DAILY_FACT.CAL_DT = DW_CAL_DT_IH.CAL_DT INNER JOIN CATG_MAPPING_PROC4 as CATG_MAPPING_PROC4 ON IH_SUBSIDY_DAILY_FACT.SITE_ID = CATG_MAPPING_PROC4.SITE_ID AND IH_SUBSIDY_DAILY_FACT.LEAF_CATEG_ID = CATG_MAPPING_PROC4.LEAF_CATEG_ID group by IH_SUBSIDY_DAILY_FACT.CAL_DT
+User: _MIP_READONLY
+Success: true
+Duration: 0.0
+Project: GRO
+Realization Names: [ih_subsidy_daily_fact]
+Cuboid Ids: []
+Total scan count: 1418
+Result row count: 1418
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: true
+Message: null
+==========================[QUERY]===============================
+
+2016-11-20 00:00:42,078 INFO  [http-bio-7070-exec-43] controller.QueryController:231 : Using project: Nous_Lexington
+2016-11-20 00:00:42,091 INFO  [http-bio-7070-exec-43] controller.QueryController:232 : The original query:  select session_date, sum(err_cnt) from LEX_MODULE_ERR_EXT_SD group by session_date
+2016-11-20 00:00:42,091 INFO  [http-bio-7070-exec-43] controller.QueryController:358 : The sqlResponse is found in SUCCESS_QUERY_CACHE
+2016-11-20 00:00:42,098 INFO  [http-bio-7070-exec-43] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: select session_date, sum(err_cnt) from LEX_MODULE_ERR_EXT_SD group by session_date
+User: _NOUS_READONLY
+Success: true
+Duration: 0.001
+Project: Nous_Lexington
+Realization Names: [LEX_MODULE_ERR_EXT_SD]
+Cuboid Ids: []
+Total scan count: 89
+Result row count: 78
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: true
+Message: null
+==========================[QUERY]===============================
+
+2016-11-20 00:00:44,081 INFO  [http-bio-7070-exec-80] controller.QueryController:231 : Using project: GRO
+2016-11-20 00:00:44,081 INFO  [http-bio-7070-exec-80] controller.QueryController:232 : The original query:  SELECT IH_REVENUE_DAILY_FACT_MERCHANT_V1.CAL_DT, sum(IH_REVENUE_DAILY_FACT_MERCHANT_V1.TY_TOTAL_REVENUE) FROM IH_REVENUE_DAILY_FACT_MERCHANT_V1 as IH_REVENUE_DAILY_FACT_MERCHANT_V1 INNER JOIN DW_CAL_DT_IH as DW_CAL_DT_IH ON IH_REVENUE_DAILY_FACT_MERCHANT_V1.CAL_DT = DW_CAL_DT_IH.CAL_DT INNER JOIN CATG_MAPPING_PROC4 as CATG_MAPPING_PROC4 ON IH_REVENUE_DAILY_FACT_MERCHANT_V1.SITE_ID = CATG_MAPPING_PROC4.SITE_ID AND IH_REVENUE_DAILY_FACT_MERCHANT_V1.LEAF_CATEG_ID = CATG_MAPPING_PROC4.LEAF_CATEG_ID group by IH_REVENUE_DAILY_FACT_MERCHANT_V1.CAL_DT
+2016-11-20 00:00:44,081 INFO  [http-bio-7070-exec-80] controller.QueryController:358 : The sqlResponse is found in SUCCESS_QUERY_CACHE
+2016-11-20 00:00:44,088 INFO  [http-bio-7070-exec-80] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: SELECT IH_REVENUE_DAILY_FACT_MERCHANT_V1.CAL_DT, sum(IH_REVENUE_DAILY_FACT_MERCHANT_V1.TY_TOTAL_REVENUE) FROM IH_REVENUE_DAILY_FACT_MERCHANT_V1 as IH_REVENUE_DAILY_FACT_MERCHANT_V1 INNER JOIN DW_CAL_DT_IH as DW_CAL_DT_IH ON IH_REVENUE_DAILY_FACT_MERCHANT_V1.CAL_DT = DW_CAL_DT_IH.CAL_DT INNER JOIN CATG_MAPPING_PROC4 as CATG_MAPPING_PROC4 ON IH_REVENUE_DAILY_FACT_MERCHANT_V1.SITE_ID = CATG_MAPPING_PROC4.SITE_ID AND IH_REVENUE_DAILY_FACT_MERCHANT_V1.LEAF_CATEG_ID = CATG_MAPPING_PROC4.LEAF_CATEG_ID group by IH_REVENUE_DAILY_FACT_MERCHANT_V1.CAL_DT
+User: _MIP_READONLY
+Success: true
+Duration: 0.001
+Project: GRO
+Realization Names: [ih_merchant_revenue_daily_fact_v1]
+Cuboid Ids: []
+Total scan count: 1053
+Result row count: 1053
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: true
+Message: null
+==========================[QUERY]===============================
+
+2016-11-20 00:00:47,082 INFO  [http-bio-7070-exec-75] controller.QueryController:231 : Using project: GRO
+2016-11-20 00:00:47,083 INFO  [http-bio-7070-exec-75] controller.QueryController:232 : The original query:  SELECT IH_UNIQLSTR_DAILY_MERCHANT.CAL_DT, count( distinct IH_UNIQLSTR_DAILY_MERCHANT.SLR_ID) FROM IH_UNIQLSTR_DAILY_MERCHANT as IH_UNIQLSTR_DAILY_MERCHANT INNER JOIN DW_CAL_DT_IH as DW_CAL_DT_IH ON IH_UNIQLSTR_DAILY_MERCHANT.CAL_DT = DW_CAL_DT_IH.CAL_DT INNER JOIN CATG_MAPPING_PROC4 as CATG_MAPPING_PROC4 ON IH_UNIQLSTR_DAILY_MERCHANT.SITE_ID = CATG_MAPPING_PROC4.SITE_ID AND IH_UNIQLSTR_DAILY_MERCHANT.LEAF_CATEG_ID = CATG_MAPPING_PROC4.LEAF_CATEG_ID group by IH_UNIQLSTR_DAILY_MERCHANT.CAL_DT
+2016-11-20 00:00:47,083 INFO  [http-bio-7070-exec-75] controller.QueryController:358 : The sqlResponse is found in SUCCESS_QUERY_CACHE
+2016-11-20 00:00:47,088 INFO  [http-bio-7070-exec-75] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: SELECT IH_UNIQLSTR_DAILY_MERCHANT.CAL_DT, count( distinct IH_UNIQLSTR_DAILY_MERCHANT.SLR_ID) FROM IH_UNIQLSTR_DAILY_MERCHANT as IH_UNIQLSTR_DAILY_MERCHANT INNER JOIN DW_CAL_DT_IH as DW_CAL_DT_IH ON IH_UNIQLSTR_DAILY_MERCHANT.CAL_DT = DW_CAL_DT_IH.CAL_DT INNER JOIN CATG_MAPPING_PROC4 as CATG_MAPPING_PROC4 ON IH_UNIQLSTR_DAILY_MERCHANT.SITE_ID = CATG_MAPPING_PROC4.SITE_ID AND IH_UNIQLSTR_DAILY_MERCHANT.LEAF_CATEG_ID = CATG_MAPPING_PROC4.LEAF_CATEG_ID group by IH_UNIQLSTR_DAILY_MERCHANT.CAL_DT
+User: _MIP_READONLY
+Success: true
+Duration: 0.0
+Project: GRO
+Realization Names: [ih_merchant_uniqLstr_daily]
+Cuboid Ids: []
+Total scan count: 1418
+Result row count: 1418
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: true
+Message: null
+==========================[QUERY]===============================
+
+2016-11-20 00:00:51,087 INFO  [http-bio-7070-exec-68] controller.QueryController:231 : Using project: Nous_Lexington
+2016-11-20 00:00:51,087 INFO  [http-bio-7070-exec-68] controller.QueryController:232 : The original query:  select session_date, sum(direct_vi_cnt) from LEX_MODULE_RANK_EXT_SD group by session_date
+2016-11-20 00:00:51,088 INFO  [http-bio-7070-exec-68] controller.QueryController:358 : The sqlResponse is found in SUCCESS_QUERY_CACHE
+2016-11-20 00:00:51,095 INFO  [http-bio-7070-exec-68] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: select session_date, sum(direct_vi_cnt) from LEX_MODULE_RANK_EXT_SD group by session_date
+User: _NOUS_READONLY
+Success: true
+Duration: 0.0
+Project: Nous_Lexington
+Realization Names: [LEX_MODULE_RANK_EXT_SD]
+Cuboid Ids: []
+Total scan count: 93
+Result row count: 78
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: true
+Message: null
+==========================[QUERY]===============================
+
+2016-11-20 00:00:59,094 INFO  [http-bio-7070-exec-60] controller.QueryController:231 : Using project: Nous_Lexington
+2016-11-20 00:00:59,094 INFO  [http-bio-7070-exec-60] controller.QueryController:232 : The original query:  select session_date, sum(path_cnt) from LEX_PATH_EXT_SD group by session_date
+2016-11-20 00:00:59,094 INFO  [http-bio-7070-exec-60] service.QueryService:279 : The corrected query: select session_date, sum(path_cnt) from LEX_PATH_EXT_SD group by session_date
+LIMIT 50000
+2016-11-20 00:00:59,101 INFO  [http-bio-7070-exec-60] schema.OLAPSchemaFactory:135 : Schema json:{
+    "version": "1.0",
+    "defaultSchema": "DEFAULT",
+    "schemas": [
+        {
+            "type": "custom",
+            "name": "DEFAULT",
+            "factory": "org.apache.kylin.query.schema.OLAPSchemaFactory",
+            "operand": {
+                "project": "NOUS_LEXINGTON"
+            },
+            "functions": [
+               {
+                   name: 'MASSIN',
+                   className: 'org.apache.kylin.query.udf.MassInUDF'
+               }
+              ]
+        }
+    ]
+}
+2016-11-20 00:00:59,123 INFO  [http-bio-7070-exec-60] routing.QueryRouter:48 : The project manager's reference is org.apache.kylin.metadata.project.ProjectManager@1a230cc8
+2016-11-20 00:00:59,124 INFO  [http-bio-7070-exec-60] routing.QueryRouter:60 : Find candidates by table DEFAULT.LEX_PATH_EXT_SD and project=NOUS_LEXINGTON : org.apache.kylin.query.routing.Candidate@256ddaec
+2016-11-20 00:00:59,124 INFO  [http-bio-7070-exec-60] routing.QueryRouter:49 : Applying rule: class org.apache.kylin.query.routing.rules.RemoveUncapableRealizationsRule, realizations before: [LEX_PATH_EXT_SD(CUBE)], realizations after: [LEX_PATH_EXT_SD(CUBE)]
+2016-11-20 00:00:59,124 INFO  [http-bio-7070-exec-60] routing.QueryRouter:49 : Applying rule: class org.apache.kylin.query.routing.rules.RealizationSortRule, realizations before: [LEX_PATH_EXT_SD(CUBE)], realizations after: [LEX_PATH_EXT_SD(CUBE)]
+2016-11-20 00:00:59,125 INFO  [http-bio-7070-exec-60] routing.QueryRouter:72 : The realizations remaining: [LEX_PATH_EXT_SD(CUBE)] And the final chosen one is the first one
+2016-11-20 00:00:59,161 DEBUG [http-bio-7070-exec-60] enumerator.OLAPEnumerator:107 : query storage...
+2016-11-20 00:00:59,238 DEBUG [http-bio-7070-exec-60] enumerator.OLAPEnumerator:127 : return TupleIterator...
+2016-11-20 00:00:59,925 INFO  [http-bio-7070-exec-60] service.QueryService:419 : Scan count for each storageContext: 93,
+2016-11-20 00:00:59,925 INFO  [http-bio-7070-exec-60] controller.QueryController:269 : Stats of SQL response: isException: false, duration: 831, total scan count 93
+2016-11-20 00:00:59,931 INFO  [http-bio-7070-exec-60] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: select session_date, sum(path_cnt) from LEX_PATH_EXT_SD group by session_date
+User: _NOUS_READONLY
+Success: true
+Duration: 0.831
+Project: Nous_Lexington
+Realization Names: [LEX_PATH_EXT_SD]
+Cuboid Ids: [491712]
+Total scan count: 93
+Result row count: 78
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: false
+Message: null
+==========================[QUERY]===============================
+
+2016-11-20 00:02:14,158 INFO  [http-bio-7070-exec-80] controller.QueryController:231 : Using project: Nous_Lexington
+2016-11-20 00:02:14,158 INFO  [http-bio-7070-exec-80] controller.QueryController:232 : The original query:  select session_date, sum(attr_gmb_usd) from LEX_BRWS_GMB_SD_EXT group by session_date
+2016-11-20 00:02:14,158 INFO  [http-bio-7070-exec-80] controller.QueryController:358 : The sqlResponse is found in SUCCESS_QUERY_CACHE
+2016-11-20 00:02:14,167 INFO  [http-bio-7070-exec-80] service.QueryService:259 : 
+==========================[QUERY]===============================
+SQL: select session_date, sum(attr_gmb_usd) from LEX_BRWS_GMB_SD_EXT group by session_date
+User: _NOUS_READONLY
+Success: true
+Duration: 0.001
+Project: Nous_Lexington
+Realization Names: [LEX_BRWS_GMB_SD_EXT]
+Cuboid Ids: []
+Total scan count: 74
+Result row count: 74
+Accept Partial: false
+Is Partial Result: false
+Hit Exception Cache: false
+Storage cache used: true
+Message: null
+==========================[QUERY]===============================
